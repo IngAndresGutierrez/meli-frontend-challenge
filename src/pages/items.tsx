@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation'
 
 import { Item } from '@/modules/items/types/items'
 import useGetItems from '@/modules/items/hooks/useGetItems'
+import SearchBarComponent from '@/modules/home/components/SearchBar'
 
 const ItemsPage = () => {
   const searchParams = useSearchParams()
@@ -12,7 +13,7 @@ const ItemsPage = () => {
 
   return (
     <>
-      <h1>Items Page</h1>
+      <SearchBarComponent />
       <ul>
         {items.map((item: Item) => (
           <Link key={item.id} href={`items/${item.id}`}>
