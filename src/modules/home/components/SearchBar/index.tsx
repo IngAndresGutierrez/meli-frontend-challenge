@@ -96,19 +96,6 @@ const SearchBarComponent = () => {
             <span className="nav-menu-cp-send">Ingresa tu</span>
             <span className="nav-menu-link-cp"> ubicación</span>
           </a>
-          <div className="nav-menu-item">
-            <a
-              className="nav-menu-cp nav-menu-cp-logged"
-              data-js="cp"
-              href=""
-              data-modal-action="true"
-              aria-expanded="false"
-              aria-haspopup="true"
-            >
-              <span className="nav-menu-cp-send">Ingresa tu</span>
-              <span className="nav-menu-link-cp"> ubicación</span>
-            </a>
-          </div>
         </div>
         <div className="nav-area nav-bottom-area nav-center-area">
           <div className="nav-menu">

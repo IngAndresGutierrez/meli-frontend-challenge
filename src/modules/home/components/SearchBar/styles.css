@@ -1,25 +1,4 @@
-@charset "utf-8"; /*
- * Navigation
- * @platform "mercadolibre"
- * @version 6.6.31
- * @author MercadoLibre.com
- */
-@font-face {
-  font-family: 'navigation';
-  src: url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.31/mercadolibre/navigation.eot');
-  src: url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.31/mercadolibre/navigation.eot#iefix')
-      format('embedded-opentype'),
-    url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.31/mercadolibre/navigation.woff2')
-      format('woff2'),
-    url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.31/mercadolibre/navigation.woff')
-      format('woff'),
-    url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.31/mercadolibre/navigation.ttf')
-      format('truetype'),
-    url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.31/mercadolibre/navigation.svg#navigation')
-      format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@charset "utf-8";
 
 [class^='nav-icon-'],
 [class*=' nav-icon-'] {
