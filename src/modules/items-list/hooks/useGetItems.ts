@@ -2,8 +2,8 @@
 import { useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 
-import { getItems } from '@/modules/items/services/items'
 import { setItems } from '@/redux/store/slices/itemsSlice'
+import { getItems } from '@/modules/items-list/services/items'
 
 const useGetItems = (query: string) => {
   const dispatch = useDispatch()

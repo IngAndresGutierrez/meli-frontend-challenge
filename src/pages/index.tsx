@@ -1,10 +1,10 @@
 'use client'
-import SearchBarComponent from '@/modules/home/components/SearchBar'
+import SearchBar from '@/modules/home/components/SearchBar'
 
 const HomePage = () => {
   return (
     <>
-      <SearchBarComponent />
+      <SearchBar />
     </>
   )
 }

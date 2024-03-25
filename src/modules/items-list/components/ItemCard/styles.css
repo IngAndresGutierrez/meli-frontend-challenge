@@ -1,0 +1,31 @@
+.card {
+  width: 100%;
+  display: flex;
+  margin-top: 1px;
+  border-radius: 0;
+  position: relative;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 20px 50px 20px 0;
+}
+
+.card__image {
+  margin: 0;
+  flex-shrink: 0;
+  width: 160px;
+  display: flex;
+  height: 160px;
+  font-size: 1px;
+  padding: 0 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  flex-direction: row;
+  box-sizing: content-box;
+}
+
+.card__information {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 208px);
+}
