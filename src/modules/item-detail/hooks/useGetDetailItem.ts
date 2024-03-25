@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
 
-import { getDetailItem } from '@/modules/items/services/items'
+import { getDetailItem } from '../services/items'
 
 const useGetDetailItem = (id: string | string[] | undefined) => {
   const [itemDetail, setItemDetail] = useState([])

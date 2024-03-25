@@ -1,4 +1,5 @@
-import useGetDetailItem from '@/modules/items/hooks/useGetDetailItem'
+'use client'
+import useGetDetailItem from '@/modules/item-detail/hooks/useGetDetailItem'
 
 import { useRouter } from 'next/router'
 

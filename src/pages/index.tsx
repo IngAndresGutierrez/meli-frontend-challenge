@@ -1,12 +1,11 @@
 'use client'
-import SearchComponent from '@/modules/items/components/Search'
+import SearchBarComponent from '@/modules/home/components/SearchBar'
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
-    <div>
-      <h1>Buscador</h1>
-      <SearchComponent />
-    </div>
+    <>
+      <SearchBarComponent />
+    </>
   )
 }
 
