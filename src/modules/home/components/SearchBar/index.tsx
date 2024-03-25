@@ -2,8 +2,6 @@
 import { useRouter } from 'next/router'
 import { ChangeEvent, useState } from 'react'
 
-import './styles.css'
-
 const SearchBarComponent = () => {
   const router = useRouter()
   const [query, setQuery] = useState('')
