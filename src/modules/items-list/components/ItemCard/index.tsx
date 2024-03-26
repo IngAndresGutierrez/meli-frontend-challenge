@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from 'react'
 
-import './styles.css'
 import { Item } from '../../types/items'
 import { Rating } from '@mui/material'
 import { generateRandomRating } from '../../utils/random'

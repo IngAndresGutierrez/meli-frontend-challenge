@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import { Grid } from '@mui/material'
 
-import './styles.css'
 import ItemCard from '../ItemCard'
 import { Item } from '../../types/items'
 
