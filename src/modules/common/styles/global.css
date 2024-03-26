@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+@import url('../../items-list/components/ItemCard/styles.css');
+@import url('../../items-list/components/ItemsList/styles.css');
+
 body {
   font-family: 'Lato', sans-serif;
 }
