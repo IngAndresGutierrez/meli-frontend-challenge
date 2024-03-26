@@ -1,31 +1,77 @@
-.card {
-  width: 100%;
+.item-card {
   display: flex;
-  margin-top: 1px;
-  border-radius: 0;
-  position: relative;
-  flex-direction: row;
   background-color: #fff;
   padding: 20px 50px 20px 0;
+  margin-bottom: 1px;
 }
 
-.card__image {
-  margin: 0;
-  flex-shrink: 0;
+.item-card__image {
   width: 160px;
-  display: flex;
   height: 160px;
-  font-size: 1px;
-  padding: 0 24px;
-  overflow: hidden;
   border-radius: 4px;
-  position: relative;
-  flex-direction: row;
-  box-sizing: content-box;
+  overflow: hidden;
 }
 
-.card__information {
+.item-card__info {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 208px);
+  margin-left: 20px;
+  width: 100%;
+}
+
+.item-card__title-text {
+  color: #333;
+  font-size: 20px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-card__columns {
+  display: flex;
+  margin-top: 10px;
+}
+
+.item-card__column-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.item-card__column-group-right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 50%;
+  min-height: 16px;
+  top: 7px;
+  width: 285px;
+}
+
+.item-card__column-price {
+  color: #333;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.item-card__column-shipping-text {
+  font-size: 14px;
+  color: #00a650;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.item-card__column-variants {
+  margin-top: 13px;
+}
+
+.item-card__column-variants-text {
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.item-card__column-rating--color {
+  color: '#3483fa';
 }

@@ -7,19 +7,26 @@ import { Item } from '../../types/items'
 
 const ItemsList: FC<{ items: Item[] }> = ({ items }) => {
   const renderItems = items?.map((item, index) => {
-    const { id, title, thumbnail } = item
+    const { id, title, price, thumbnail, installments, shipping } = item
     return (
-      <>
+      <div key={item.id}>
         {index < 4 && (
-          <ItemCard key={item.id} id={id} title={title} thumbnail={thumbnail} />
+          <ItemCard
+            id={id}
+            title={title}
+            price={price}
+            shipping={shipping}
+            thumbnail={thumbnail}
+            installments={installments}
+          />
         )}
-      </>
+      </div>
     )
   })
 
   return (
-    <div className="list">
-      <Grid className="list__container" container>
+    <div className="items-list">
+      <Grid className="items-list__container" container>
         <Grid item xs={12} md={3}></Grid>
         <Grid item xs={12} md={9}>
           {renderItems}

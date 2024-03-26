@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 import { CssBaseline } from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles'
 
+import '../modules/common/styles/global.css'
 import theme from '../modules/common/styles/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
