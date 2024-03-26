@@ -30,9 +30,11 @@ const ItemCardComponent: FC<Item> = ({
                 <div className="item-card__column-header">
                   <span className="item-card__column-price">${price}</span>
                 </div>
-                <span className="item-card__column-installments">
-                  en {installments.quantity} x $ {installments.amount}
-                </span>
+                {installments?.quantity && (
+                  <span className="item-card__column-installments">
+                    en {installments?.quantity} x $ {installments?.amount}
+                  </span>
+                )}
               </div>
             </div>
 

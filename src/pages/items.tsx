@@ -1,7 +1,7 @@
 'use client'
 import { useSearchParams } from 'next/navigation'
 
-import SearchBar from '@/modules/home/components/SearchBar'
+import SearchBar from '@/modules/common/components/SearchBar'
 import useGetItems from '@/modules/items-list/hooks/useGetItems'
 import ItemsList from '@/modules/items-list/components/ItemsList'
 

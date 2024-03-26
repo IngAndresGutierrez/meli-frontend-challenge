@@ -3,6 +3,7 @@ import { Grid } from '@mui/material'
 
 import ItemCard from '../ItemCard'
 import { Item } from '../../types/items'
+import SimpleBackdrop from '@/modules/common/Backdrop'
 
 const ItemsList: FC<{ items: Item[] }> = ({ items }) => {
   const renderItems = items?.map((item, index) => {
@@ -26,11 +27,12 @@ const ItemsList: FC<{ items: Item[] }> = ({ items }) => {
   return (
     <div className="items-list">
       <Grid className="items-list__container" container>
-        <Grid item xs={12} md={3}></Grid>
-        <Grid item xs={12} md={9}>
+        <Grid item xs={12} md={4}></Grid>
+        <Grid item xs={12} md={8}>
           {renderItems}
         </Grid>
       </Grid>
+      <SimpleBackdrop open={!items?.length} />
     </div>
   )
 }

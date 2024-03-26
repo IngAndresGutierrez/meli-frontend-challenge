@@ -1,5 +1,5 @@
 'use client'
-import SearchBar from '@/modules/home/components/SearchBar'
+import SearchBar from '@/modules/common/components/SearchBar'
 
 const HomePage = () => {
   return (
