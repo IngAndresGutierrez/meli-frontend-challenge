@@ -12,7 +12,7 @@ const ItemsPage = () => {
 
   return (
     <>
-      <SearchBar />
+      <SearchBar isItemsPage />
       <ItemsList items={items} />
     </>
   )

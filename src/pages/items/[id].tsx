@@ -1,19 +1,23 @@
 'use client'
-import useGetDetailItem from '@/modules/item-detail/hooks/useGetDetailItem'
-
 import { useRouter } from 'next/router'
+
+import SearchBar from '@/modules/common/components/SearchBar'
+import ItemDetail from '@/modules/item-detail/components/ItemDetail'
+import useGetDetailItem from '@/modules/item-detail/hooks/useGetDetailItem'
+import useGetDescriptionItem from '@/modules/item-detail/hooks/useGetDescriptionItem'
 
 const ItemDetailPage = () => {
   const router = useRouter()
   const { id } = router.query
   const { itemDetail } = useGetDetailItem(id)
+  const { itemDescription } = useGetDescriptionItem(id)
 
   console.log({ itemDetail })
 
   return (
     <>
-      <h1>ItemDetailPage {id}</h1>
-      <p>{JSON.stringify(itemDetail)}</p>
+      <SearchBar isItemsPage />
+      <ItemDetail item={itemDetail} itemDescription={itemDescription} />
     </>
   )
 }

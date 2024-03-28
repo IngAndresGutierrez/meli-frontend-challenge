@@ -1,12 +1,15 @@
 import { useRouter } from 'next/router'
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, FC, useState } from 'react'
 
-const SearchBar = () => {
+const SearchBar: FC<{ isItemsPage: boolean }> = ({ isItemsPage }) => {
   const router = useRouter()
   const [query, setQuery] = useState('')
 
   const handleSearch = async () => {
-    router.push(`items?search=${query}`)
+    router.push({
+      pathname: '/items',
+      query: { search: query },
+    })
   }
 
   const handleQuery = (e: ChangeEvent<HTMLInputElement>) => {

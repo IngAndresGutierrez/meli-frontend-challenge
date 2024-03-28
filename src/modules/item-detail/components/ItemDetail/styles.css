@@ -1,0 +1,81 @@
+.item-detail {
+  height: 100vh;
+  background-color: #ededed;
+  padding: 30px 30px 30px 30px;
+}
+
+.item-detail__container {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+}
+
+.item-detail__column-one {
+  width: 33%;
+}
+
+.item-detail__column-two {
+  width: 33%;
+}
+
+.item-detail__column-three {
+  width: 33%;
+}
+
+.item-detail__image {
+  margin-top: 40px;
+  padding: 16px;
+}
+
+.item-detail__title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  line-height: 1.18;
+  margin-top: 40px;
+}
+
+.item-detail__rating {
+  margin-bottom: 10px;
+}
+
+.item-detail__price {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.item-detail__installments--text {
+  font-size: 18px;
+  color: #00a650;
+}
+
+.item-detail__payment-methods--link {
+  color: #3483fa;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.item-detail__description {
+  margin-top: 20px;
+}
+
+.item-detail__description--title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.item-detail__description--text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.item-detail__description--list {
+  padding-left: 16px;
+}

@@ -4,7 +4,7 @@ import SearchBar from '@/modules/common/components/SearchBar'
 const HomePage = () => {
   return (
     <>
-      <SearchBar />
+      <SearchBar isItemsPage={false} />
     </>
   )
 }

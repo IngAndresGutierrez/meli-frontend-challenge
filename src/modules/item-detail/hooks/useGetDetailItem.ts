@@ -1,10 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
 
+import { Item } from '../types/item'
 import { getDetailItem } from '../services/items'
+import { emptyItem } from '../utils/constants/item'
 
-const useGetDetailItem = (id: string | string[] | undefined) => {
-  const [itemDetail, setItemDetail] = useState([])
+const useGetDetailItem = (
+  id: string | string[] | undefined
+): { itemDetail: Item } => {
+  const [itemDetail, setItemDetail] = useState(emptyItem)
 
   useEffect(() => {
     if (id) {

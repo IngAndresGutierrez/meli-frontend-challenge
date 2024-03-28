@@ -1,19 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from 'react'
+import { useRouter } from 'next/router'
 
-import { Item } from '../../types/items'
 import { Rating } from '@mui/material'
+import { Item } from '@/modules/item-detail/types/item'
 import { generateRandomRating } from '../../utils/random'
 
 const ItemCardComponent: FC<Item> = ({
+  id,
   title,
   price,
   shipping,
   thumbnail,
   installments,
 }) => {
+  const router = useRouter()
+
+  const redirectToItem = () => {
+    router.push(`/items/${id}`)
+  }
+
   return (
-    <div className="item-card">
+    <div className="item-card" onClick={redirectToItem}>
       <div className="item-card__image">
         <img src={thumbnail} alt={title} width={160} />
       </div>
@@ -54,7 +62,7 @@ const ItemCardComponent: FC<Item> = ({
               <div className="item-card__column-rating">
                 <Rating
                   readOnly
-                  size="small"
+                  size="medium"
                   precision={0.1}
                   name="half-rating-read"
                   sx={{ color: '#3483fa' }}

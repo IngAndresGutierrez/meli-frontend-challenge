@@ -2,10 +2,10 @@ import { FC } from 'react'
 import { Grid } from '@mui/material'
 
 import ItemCard from '../ItemCard'
-import { Item } from '../../types/items'
+import { ItemsListProps } from '../../types/items'
 import SimpleBackdrop from '@/modules/common/Backdrop'
 
-const ItemsList: FC<{ items: Item[] }> = ({ items }) => {
+const ItemsList: FC<ItemsListProps> = ({ items }) => {
   const renderItems = items?.map((item, index) => {
     const { id, title, price, thumbnail, installments, shipping } = item
     return (

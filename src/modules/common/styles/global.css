@@ -3,6 +3,7 @@
 @import url('../../items-list/components/ItemCard/styles.css');
 @import url('../../items-list/components/ItemsList/styles.css');
 @import url('../../common/components/SearchBar/styles.css');
+@import url('../../item-detail/components/ItemDetail/styles.css');
 
 body {
   font-family: 'Lato', sans-serif;
