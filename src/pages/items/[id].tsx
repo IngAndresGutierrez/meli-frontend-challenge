@@ -16,7 +16,7 @@ const ItemDetailPage = () => {
 
   return (
     <>
-      <SearchBar isItemsPage />
+      <SearchBar />
       <ItemDetail item={itemDetail} itemDescription={itemDescription} />
     </>
   )

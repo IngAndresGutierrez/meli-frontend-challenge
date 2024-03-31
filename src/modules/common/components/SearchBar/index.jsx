@@ -1,7 +1,7 @@
+import { useState } from 'react'
 import { useRouter } from 'next/router'
-import { ChangeEvent, FC, useState } from 'react'
 
-const SearchBar: FC<{ isItemsPage: boolean }> = ({ isItemsPage }) => {
+const SearchBar = () => {
   const router = useRouter()
   const [query, setQuery] = useState('')
 
@@ -12,7 +12,7 @@ const SearchBar: FC<{ isItemsPage: boolean }> = ({ isItemsPage }) => {
     })
   }
 
-  const handleQuery = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleQuery = (e) => {
     setQuery(e.target.value)
   }
 

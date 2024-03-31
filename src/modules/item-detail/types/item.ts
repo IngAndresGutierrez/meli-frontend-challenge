@@ -10,6 +10,9 @@ export interface Item {
   shipping: {
     free_shipping: boolean
   }
+  seller: {
+    nickname: string
+  }
 }
 
 export interface ItemDescription {

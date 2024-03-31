@@ -7,7 +7,7 @@ import SimpleBackdrop from '@/modules/common/Backdrop'
 
 const ItemsList: FC<ItemsListProps> = ({ items }) => {
   const renderItems = items?.map((item, index) => {
-    const { id, title, price, thumbnail, installments, shipping } = item
+    const { id, title, price, thumbnail, installments, shipping, seller } = item
     return (
       <div key={item.id}>
         {index < 4 && (
@@ -15,6 +15,7 @@ const ItemsList: FC<ItemsListProps> = ({ items }) => {
             id={id}
             title={title}
             price={price}
+            seller={seller}
             shipping={shipping}
             thumbnail={thumbnail}
             installments={installments}
