@@ -24,8 +24,6 @@ const ItemDetail: FC<ItemDetailProps> = ({ item, itemDescription }) => {
     }
   })
 
-  console.log({ item })
-
   return (
     <>
       <div className="item-detail">

@@ -8,6 +8,11 @@ export const getItemsByQuery = async (
   res: NextApiResponse
 ) => {
   const { q } = req.query
+  const author = {
+    name: 'Andres',
+    lastname: 'Gutierrez',
+  }
+
   if (!q) {
     return res.status(400).json({ error: 'Missing query parameter' })
   }
@@ -15,7 +20,7 @@ export const getItemsByQuery = async (
   try {
     const response = await fetch(`${ITEMS_URL}${ITEMS_PATH}?q=${q}`)
     const data = await response.json()
-    return res.status(200).json(data)
+    return res.status(200).json({ author, ...data })
   } catch (error) {
     console.error('Error fetching data:', error)
     return res.status(500).json({ error: 'Internal server error' })

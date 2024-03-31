@@ -13,6 +13,7 @@ export interface Item {
   seller: {
     nickname: string
   }
+  category_id: string
 }
 
 export interface ItemDescription {

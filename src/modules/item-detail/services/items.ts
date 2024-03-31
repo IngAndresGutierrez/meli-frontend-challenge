@@ -9,3 +9,7 @@ export const getDetailItem = (id: string | string[] | undefined) => {
 export const getDescriptionItem = (id: string | string[] | undefined) => {
   return axios.get(`${API_ITEMS}/${id}/description`)
 }
+
+export const getCategoriesItem = (id: string | string[] | undefined) => {
+  return axios.get(`api/categories/${id}`)
+}

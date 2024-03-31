@@ -12,8 +12,6 @@ const ItemDetailPage = () => {
   const { itemDetail } = useGetDetailItem(id)
   const { itemDescription } = useGetDescriptionItem(id)
 
-  console.log({ itemDetail })
-
   return (
     <>
       <SearchBar />

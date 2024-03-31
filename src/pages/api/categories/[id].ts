@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 
-const DESCRIPTION_ITEM_URL = 'https://api.mercadolibre.com'
-const DESCRIPTION_ITEM_PATH = '/items'
+const CATEGORY_ITEM_URL = 'https://api.mercadolibre.com'
+const CATEGORY_ITEM_PATH = '/categories'
 
-export const getDescriptionItemById = async (
+export const getCategoryItemById = async (
   req: NextApiRequest,
   res: NextApiResponse
 ) => {
@@ -19,7 +19,7 @@ export const getDescriptionItemById = async (
 
   try {
     const response = await fetch(
-      `${DESCRIPTION_ITEM_URL}${DESCRIPTION_ITEM_PATH}/${id}/description`
+      `${CATEGORY_ITEM_URL}${CATEGORY_ITEM_PATH}/${id}`
     )
     const data = await response.json()
     return res.status(200).json({ author, ...data })
@@ -29,4 +29,4 @@ export const getDescriptionItemById = async (
   }
 }
 
-export default getDescriptionItemById
+export default getCategoryItemById

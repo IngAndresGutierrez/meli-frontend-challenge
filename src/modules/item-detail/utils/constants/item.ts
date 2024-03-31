@@ -13,4 +13,5 @@ export const emptyItem = {
   seller: {
     nickname: '',
   },
+  category_id: '',
 }
