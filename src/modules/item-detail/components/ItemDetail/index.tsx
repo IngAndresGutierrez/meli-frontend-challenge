@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Rating } from '@mui/material'
 
 import { ItemDetailProps } from '../../types/item'
-import SimpleBackdrop from '@/modules/common/Backdrop'
+import SimpleBackdrop from '@/modules/common/components/Backdrop'
 import { generateRandomRating } from '@/modules/items-list/utils/random'
 import cardIcons from '../../../../../public/images/card-icons.png'
 import warrantyImage from '../../../../../public/images/warranty.png'

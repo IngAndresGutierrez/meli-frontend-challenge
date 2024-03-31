@@ -3,7 +3,7 @@ import { Grid } from '@mui/material'
 
 import ItemCard from '../ItemCard'
 import { ItemsListProps } from '../../types/items'
-import SimpleBackdrop from '@/modules/common/Backdrop'
+import SimpleBackdrop from '@/modules/common/components/Backdrop'
 
 const ItemsList: FC<ItemsListProps> = ({ items }) => {
   const renderItems = items?.map((item, index) => {

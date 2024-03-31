@@ -10,4 +10,7 @@ export const emptyItem = {
   shipping: {
     free_shipping: false,
   },
+  seller: {
+    nickname: '',
+  },
 }
